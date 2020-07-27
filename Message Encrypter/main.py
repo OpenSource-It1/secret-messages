@@ -1,10 +1,10 @@
 import sys
 
-alphabet = 'zyxwvutsrqponmlkjihgfedcba'
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
 special = '[@_!#$%^&*()<>?/\|}{~:]1234567890'
 newMessage = ''
 
-message = input('Please enter a message to decrypt: ').lower()
+message = input('Please enter a message to encrypt: ').lower()
 
 specialInMessage = [c for c in special if c in message]
 if specialInMessage:
@@ -23,4 +23,4 @@ for character in message:
   else:
     newMessage += character
 
-print('Your new decrypted message is: ' + newMessage)
+print('Your new encrypted message is: ' + newMessage)
