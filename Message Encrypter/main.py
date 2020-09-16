@@ -24,3 +24,4 @@ for character in message:
     newMessage += character
 
 print('Your new encrypted message is: ' + newMessage)
+exit()
